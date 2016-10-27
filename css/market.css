@@ -127,27 +127,27 @@ ul{
 	background-position: right center; 
 	background-repeat: no-repeat;
 }
-.marketContent .marketInnerPro>ul{
+.marketContent .marketInner>ul{
 	height: 100%;
 	margin-top: 1.25rem;
 	overflow: scroll;
 	padding-bottom: 1.5rem;
 }
-.marketContent .marketInnerPro>ul li{
+.marketContent .marketInner>ul li{
 	height: 2.8125rem;
 	border-bottom: 1px solid #eee;
 }
-.marketContent .marketInnerPro>ul li a {
+.marketContent .marketInner>ul li a {
 	width: 100%;
 	height: 100%;
 	display: flex;
 	padding-top: 0.3125rem;
 	position: relative;
 }
-.marketContent .marketInnerPro>ul li a .pro_Info{
+.marketContent .marketInner>ul li a .pro_Info{
 	line-height: 0.625rem;
 }
-.marketContent .marketInnerPro>ul li a .product_Img{
+.marketContent .marketInner>ul li a .product_Img{
 	width: 35%;
 	height: 90%;
 	vertical-align: middle;
@@ -156,27 +156,30 @@ ul{
 	width: 90%;
 	height: 100%;
 }
-.marketContent .marketInnerPro>ul li a .pro_Info .cate_product_name{
+.marketContent .marketInner>ul li a .pro_Info .cate_product_name{
 	font-size: 0.4375rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
-.marketContent .marketInnerPro>ul li a .pro_Info .market_type span{
+.marketContent .marketInner>ul li a .pro_Info .market_type span{
 	border: 1px solid red;
 	color: red;
 	font-size: 0.3125rem;
 	padding: 0 0.15625rem;
 	border-radius: 0.15625rem;
 }
-.marketContent .marketInnerPro>ul li a .pro_Info .market_type .send{
+.marketContent .marketInner>ul li a .pro_Info .market_type .send{
 	color: #fff;
 	background-color: red;
 }
-.marketContent .marketInnerPro>ul li a .pro_Info .pro_weight,.marketContent .marketInner ul li a .pro_Info .pro_price{
+.marketContent .marketInner>ul li a .pro_Info .pro_weight,.marketContent .marketInner ul li a .pro_Info .pro_price{
 	color: #999;
 }
-.marketContent .marketInnerPro>ul li a .pro_Info .pro_price .currentPeice{
+.marketContent .marketInner>ul li a .pro_Info .pro_price .currentPeice{
 	color:  #ff3800;
 }
-.marketContent .marketInnerPro>ul li a .market_theme-spline{
+.marketContent .marketInner>ul li a .market_theme-spline{
 	position: absolute;
  	bottom: 0.3125rem;
  	right: 0.40375rem;
@@ -188,14 +191,11 @@ ul{
  	background: #ff4300 url(../img/product_operate.png) no-repeat  right center;
  	background-size: 200% 100%;
 }
-.marketContent .marketInnerPro>ul{
-	display: none;
-}
-.marketInnerPro>ul:first-of-type{
-	display: block;
-}
 .marketInner .marketInnet-tit-part{
 	display: none;
+}
+.marketInner>ul{
+	padding-bottom: 1rem;
 }
 .marketInner .marketInnet-tit-part .marketInnet-tit-part_top{
 	background-color: #fff;
