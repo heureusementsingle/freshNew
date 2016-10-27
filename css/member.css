@@ -1,0 +1,197 @@
+#member-body{
+	background-color: #eee;
+}
+ul{
+	list-style: none;
+}
+#member-Header{
+	width: 100%;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	display: flex;
+	text-align: center;
+	font-weight: 700;
+	font-size: 0.5rem;
+	background-color: #f9fafd;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 9999;
+}
+#member-Header .member-goback{
+	display: inline-block;
+	width: 30%;
+	height: 100%;
+	background-image: url(../img/toLeft.png);
+	background-size: 0.75rem 0.875rem;
+	background-repeat: no-repeat;
+	background-position: 10% center;
+}
+#member-Header .member-Name{
+	width: 40%;
+	font-size: 0.5rem;
+	text-align: center;
+}
+.member-Head{
+	height: 1.5rem;
+}
+.member-bg{
+	background-image: url(../img/member_bgc.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 6.25rem;
+	overflow-x: hidden;
+	position: relative;
+}
+.member-bg .member-Portait {
+	padding-top: 0.46875rem;
+	text-align: center;
+	color: #fff;
+	font-size: 0.375rem;
+}
+.member-bg .member-Portait .portaitPic{
+	margin-left: 39%;
+	border-radius: 50%;
+	width: 2.25rem;
+	height: 2.25rem;
+	background-image: url(../img/mine-1.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: left center;
+}
+.member-bg .member-Portait .personNum{
+	height: 0.9375rem;
+	line-height: 0.9375rem;
+}
+.member-bg .registerRank{
+	height: 1rem;
+	line-height: 1rem;
+	display: flex;
+	margin-top: 0.625rem;
+	overflow-x: hidden;
+	position: absolute;
+	left: 0;
+	bottom: 0.9375rem;
+}
+.member-bg .registerRank .line-left{
+	width: 4.6875rem;
+	margin-top: 0.3125rem ;
+	height: 0.15625rem;
+	background-color: #ffd600;
+	animation: change 1s linear 1;
+}
+@keyframes change{
+	from{
+		width: 4.6875rem;
+		background-color: #fff;
+	}
+	to{
+		width: 4.6875rem;
+		background-color: #ffd600;
+	}
+}
+.member-bg .registerRank .line-right{
+	width: 3rem;
+	margin-top: 0.3125rem ;
+	height: 0.15625rem;
+	background-color: #fff;
+}
+.member-bg .registerRank .memeber{
+	display: inline-block;
+	width: 2rem;
+	text-align: center;
+	height: 0.625rem;
+	line-height: 0.625rem;
+	border-radius: 0.3125rem;
+}
+.member-bg .registerRank .registerVip{
+	background-color: #ffd600;
+	font-size: 0.375rem ;
+	animation: vipChange .5s linear 1s 1;
+}
+@keyframes vipChange{
+	0%{
+		transform: scale(1,1);
+	}
+	50%{
+		transform: scale(1.2,1.2);
+	}
+	100%{
+		transform: scale(1,1);
+	}
+}
+.member-bg .registerRank .registerCommon{
+	background-color: #fff;
+}
+.member-bg .member-chazhi{
+	text-align: center;
+	font-size: 0.375rem;
+	color: #fff;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0.3125rem;
+}
+.vip-strategy .strategy-tit{
+	font-weight: normal;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	text-align: center;
+	font-size: 0.375rem;
+}
+.vip-strategy .strategy-tit .member-line{
+	display: inline-block;
+	width: 35%;
+	vertical-align: middle;
+	border: 1px solid #E0E0E0;
+}
+.vip-strategy ul{
+	margin-top: 0.625rem;
+}
+.vip-strategy ul li{
+	width: 100%;
+	height: 2.5rem;
+	display: flex;
+	font-size: 0.375rem;
+	padding-right: 0.46875rem;
+	border-bottom: 1px solid #E0E0E0;
+}
+.vip-strategy ul li .member-operate{
+	width: 35%;
+	height: 100%;
+	line-height: 2.5rem;
+	background-size: 1.625rem 1.625rem;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.vip-strategy ul li .memberValue{
+	background-image: url(../img/register1.png);
+}
+.vip-strategy ul li .memberDevelop{
+	width: 65%;
+	margin-top: 0.3125rem;
+}
+.vip-strategy ul li .memberDevelop .developValue{
+	font-size: 0.5rem;
+	background-image: url(../img/pull.png);
+	background-position: right center;
+	background-repeat: no-repeat;
+	background-size: 0.375rem 0.15625rem;
+}
+.vip-strategy ul li .memberDevelop .developIntroduce{
+	height: 55%;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #999;
+    text-overflow: ellipsis;		
+}
+.vip-strategy ul li .memberStrategy{
+	background-image: url(../img/register2.png);
+}
+.vip-strategy ul li .memberSpecial{
+	background-image: url(../img/register3.png);
+}
+.vip-strategy ul li .memberExplain{
+	background-image: url(../img/register4.png);
+}

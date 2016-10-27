@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<title></title>
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+			}
+			html,body{
+				max-width: 480px;
+				height: 100%;
+				margin: 0 auto;
+			}
+			body{
+				font: 16px/1.5 "Myriad Set Pro","Lucida Grande","Helvetica Neue",Helvetica,Arial,Verdana,sans-serif,'Microsoft Yahei',Simsun;
+				color: #333;
+				min-width: 320px;
+			}
+			a{
+				text-decoration: none;
+				color: #333;
+			}
+			.container{
+				margin-bottom: 1.5rem;
+				height: 85%;
+			}
+			ul{
+				list-style: none;
+			}
+			footer{
+				height: 1.5rem;
+				width: 100%;
+				display: flex;
+				text-align: center;
+				position: fixed;
+				right: 0;
+				left: 0;
+				bottom: 0;
+				font-size: 0.4375rem;
+				background-color: rgba(246,246,246,.95);
+				max-width: 480px;
+			}
+			footer a{
+				padding: 0.15625rem 0;
+				display: inline-block;
+				width: 25%;
+				height: 100%;
+				text-decoration: none;
+				color: #777;
+				text-align: center;
+			}
+			footer a span{
+				display: block;
+				height: 60%;
+				background-size: .6rem;
+				background-position: center;   
+				background-repeat: no-repeat;
+			}
+			footer a .home{
+				background-image: url(img/home1.png);
+			}
+			footer a .market{
+				background-image: url(img/market.png);
+			}
+			footer a .shopCar{
+				background-image: url(img/shopCar.png);
+			}
+			footer a .mine{
+				background-image: url(img/mine.png);
+			}
+			.onLoading{
+				height: 100%;
+				width: 100%;
+				background-color: rgba(0,0,0,0.8);
+			}
+			.onLoading ul{
+				margin: 0 auto;
+				width: 35%;
+				padding-top: 7rem;
+			}
+			.onLoading ul li{
+				width: 0.625rem;
+				height: 0.625rem;
+				border-radius: 50%;
+				margin-right: 0.3125rem;
+				background-color: rgba(255,255,255,0.8);
+				display: inline-block;
+			}
+			.onLoading ul li:first-of-type{
+				animation: huan .2s linear;
+			}
+			.onLoading ul li:nth-of-type(2){
+				animation: huan .2s linear .2s;
+			}
+			.onLoading ul li:nth-of-type(3){
+				animation: huan .2s linear .4s;
+			}
+			@keyframes huan{
+				0%{
+					background-color: rgba(0,0,0,0.8);
+					transform: scale(1,1);
+				}
+				50%{
+					background-color: #FFD600;
+					transform: scale(1.3,1.3);
+				}
+				100%{
+					background-color: rgba(0,0,0,0.8);
+					transform: scale(1,1);
+				}
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="onLoading">
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div class="container"></div>
+		<footer>
+			<a href="#home">
+				<span class="home"></span>
+				<p>首页</p>
+			</a>
+			<a href="#market">
+				<span class="market"></span>
+				<p>闪送超市</p>
+			</a>
+			<a href="#shopCar">
+				<span class="shopCar"></span>
+				<p>购物车</p>
+			</a>
+			<a href="#mine">
+				<span class="mine"></span>
+				<p>我的</p>
+			</a>
+		</footer>
+		<script src="flexible.js"></script>
+		<script type="text/javascript" src="lib/require.js" data-main="./app"></script>
+	</body>
+</html>

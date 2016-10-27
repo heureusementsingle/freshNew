@@ -1,0 +1,173 @@
+body{
+	background-color: #eee;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+#mine-header{
+	background-color: #ffd600;
+	font-size: 0.375rem;
+	color: #fff;
+	margin-bottom: 0.3125rem;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 999;
+	height: 4.5rem;
+}
+#mine-header .mine-user{
+	padding: 0.625rem 0.40625rem;
+	display: flex;
+	background-position: 95% center;
+	background-image: url(../img/mine-toRight.png);
+	background-size: 0.375rem 0.625rem;
+	background-repeat: no-repeat;
+}
+#mine-header .mine-user .userPortait{
+	border-radius: 50%;
+	width: 2rem;
+	height: 2rem;
+	background-image: url(../img/mine-1.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+#mine-header .mine-user .mine-userInfo{
+	line-height: 0.9375rem;
+	margin-left: 0.625rem;
+}
+#mine-header .mine-user .mine-userInfo .registerLogo{
+	display: inline-block;
+	text-decoration: none;
+	width: 2.5rem;
+	height: 1rem;
+	line-height: 1rem;
+	background-image: url(../img/mine-2.png);
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size:100%;
+	text-align: center;
+	font-weight: 700;
+	color: red;
+	font-size: 0.3125rem;
+	padding-left: 15%;
+}
+.mine-head-bottom{
+	height: 1.25rem;
+	line-height: 1.25rem;
+	display: flex;
+	background-color: #f3c800;
+}
+.mine-head-bottom .proReserve{
+	width: 50%;
+	text-align: center;
+	background-position: 20% center;
+	background-repeat: no-repeat;
+	background-size: 0.625rem 0.625rem;
+}
+.mine-head-bottom .proReserve:first-child{
+	background-image: url(../img/mine-12.png);
+}
+.mine-head-bottom .proReserve:last-child{
+	background-image: url(../img/mine-13.png);
+}
+.mine-head-bottom .demoBor{
+	height: 70%;
+	margin-top: 0.15625rem;
+	vertical-align: middle;
+	border-right: 1px solid #fff;
+}
+.mine-head{
+	height: 4.8125rem;
+}
+.mine-content{
+	height: 80%;
+	padding-bottom: 1rem;
+	overflow: scroll;
+}
+.mine-order-oprate{
+	background-color: #fff;
+	font-size: 0.375rem;
+	margin-bottom: 0.3125rem;
+}
+.mine-order-oprate .mine-order{
+	display: flex;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	border-bottom: 1px solid #E0E0E0;
+}
+.mine-order-oprate .mine-order .mintOrder-tit{
+	width: 70%;
+	padding-left: 0.625rem;
+}
+.mine-order-oprate .mine-order .orderTotal{
+	width: 30%;
+	background-image: url(../img/toRight.png);
+	background-position: 110% center;
+	background-repeat: no-repeat;
+	background-size: 25%; 
+}
+.mine-order-oprate .mine-contect{
+	display: flex;
+	height: 2.375rem;
+	padding-top: 0.375rem;
+	border-bottom: 1px solid #E0E0E0;
+}
+.mine-order-oprate .mine-contect li{
+	width: 25%;
+	text-align: center;
+}
+.mine-order-oprate .mine-contect li .mine-contect-pic{
+	width: 100%;
+	height: 70%;
+	background-position:center ;
+	background-repeat: no-repeat;
+	background-size: 0.625rem 0.625rem;
+}
+.mine-order-oprate .mine-contect li .pay{
+	background-image: url(../img/mine-3.png);
+}
+.mine-order-oprate .mine-contect li .acept{
+	background-image: url(../img/mine-4.png);
+}
+.mine-order-oprate .mine-contect li .evaluate{
+	background-image: url(../img/mine-5.png);
+}
+.mine-order-oprate .mine-contect li .service{
+	background-image: url(../img/mine-6.png);
+}
+.mine-order-oprate .mine-block{
+	height: 3rem;
+	padding-bottom: 0.625rem;
+}
+.mine-order-oprate .mine-block li .mine-contect-pic{
+	background-size: 1rem 0.875rem;
+}
+.mine-order-oprate .mine-block li .integral{
+	background-image: url(../img/mine-7.png);
+}
+.mine-order-oprate .mine-block li .favorable{
+	background-image: url(../img/mine-8.png);
+}
+.mine-order-oprate .mine-block li .profile{
+	background-image: url(../img/mine-9.png);
+}
+.mine-order-oprate .mine-block li .feedback{
+	background-image: url(../img/mine-10.png);
+}
+.mine-order-oprate .mine-block li .aboutUs{
+	background-image: url(../img/mine-11.png);
+}
+.mine-goOut{
+	height: 1.5rem;
+	background-color: #fff;
+	margin-top: 0.625rem;
+	line-height: 1.5rem;
+	text-align: center;
+	font-size: 0.375rem;
+}
